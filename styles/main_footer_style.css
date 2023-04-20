@@ -1,0 +1,24 @@
+nav.footer_navbar{
+	background: #92DFF3;
+	height: auto;
+	width: 80%;
+	margin: auto;
+	padding: 0;
+	text-align: right;
+	padding-right: 5vw;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+
+@media (min-width: 859px) and (max-width: 1180px){
+	nav.footer_navbar{
+		width: 90%;
+	}
+}
+
+@media (max-width: 858px){
+	nav.footer_navbar{
+		width: 100%
+	}
+}

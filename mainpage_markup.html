@@ -1,0 +1,147 @@
+<html prefix="og: //ogp.me/ns#">
+	<head>
+		<meta charset="UTF-8">
+		<title >Alistra</title>
+		<meta property="og:title" content="Alistra">
+		<meta property="og:type" content="video.other">
+		<meta property="og:url" content="//www.alistravchat.com/">
+		<meta property="og:image" content="images/igor.jpg">
+		<meta property="og:description" content="Nothing to look at here">
+		<meta name="keywords" content="Alistra">
+		<meta name="author" content="Viktor Dulov">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles/main_header_and_navbar_style.css">
+		<link rel="stylesheet" type="text/css" href="styles/main_footer_style.css">
+		<link rel="stylesheet" type="text/css" href="styles/feedback_popup_style.css">
+		<link rel="stylesheet" type="text/css" href="styles/main_body_style.css">
+	</head>
+
+	<header>
+			<input type="checkbox" id="check_feedback">
+			<label for="check_feedback" class="right_bottom_popup_checkbtn">
+				<image class="right_bottom_popup_checkbtn" src="images/feedback.png" alt="Feedback popup icon"/>
+			</label>
+			<form class="feedback_popup">
+				<div class="feedback_popup_headbar" role="button">
+					<label for="check_feedback" type="button" id="close_feedback">
+						<image class=feedback_cross src="images/cross.svg"></image>
+					</label>
+					<b style="text-align:center;">Share your thoughts</b>
+				</div>
+				<input type="radio" name="feedback_type" id="question_checkbox" value="off">
+				<input type="radio" name="feedback_type" id="feedback_checkbox" value="on">
+				<div class="message_type_buttons" role="radiogroup" area-label="Selection if you'd like to leave feedback or ask a question">
+					<label for="question_checkbox" id="question_button">Question</label>
+					<label for="feedback_checkbox" id="feedback_button">Feedback</label>
+				</div>
+				<input type="email" placeholder="your_email@gmail.com" class="email"/>
+				<textarea placeholder="Message..." class="feedback_content"></textarea>
+				<div class="feedback_rate" role="radiogroup" area-label="Star ratings">
+					<input type="radio" id="star5" name="feedback_rate" value="5" />
+					<label for="star5">5</label>
+					<input type="radio" id="star4" name="feedback_rate" value="4" />
+					<label for="star4">4</label>
+					<input type="radio" id="star3" name="feedback_rate" value="3" />
+					<label for="star3">3</label>
+					<input type="radio" id="star2" name="feedback_rate" value="2" />
+					<label for="star2">2</label>
+					<input type="radio" id="star1" name="feedback_rate" value="1" />
+					<label for="star1">1</label>
+				</div>
+				<input type="submit" id="send_feedback" value="Send">
+			</form>
+			
+			<nav class="header_navbar">
+				<input type="checkbox" id="check_navbar"  class="header_navbar">
+				<label for="check_navbar" class="checkbtn"><a aria-hidden="true">&#9776;</a></label>
+				<label class="logo">AlistraVChat</label>
+				<ul  class="header_navbar" role="menu">
+					<li  class="header_navbar"><a href=""  class="header_navbar" accesskey="h">Home</a></li>
+					<li  class="header_navbar"><a href=""  class="header_navbar" accesskey="q">FAQ</a></li>
+					<li  class="header_navbar"><a href=""  class="header_navbar" accesskey="o">Open rooms</a></li>
+					<li  class="header_navbar"><a href=""  class="header_navbar" accesskey="c">Create a room</a></li>
+					<li  class="header_navbar"><a href=""  class="header_navbar" accesskey="f">Feedback</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<body>
+	
+	<div class="contents" role="main">
+		<section class="news_section">
+
+			<header><a href="">
+				<h1>Welcome to Alistra!</h1>
+			</a></header>
+			
+			<article role="article" area-label="Site news" accesskey="n">
+			
+				<h2>Latest updates:</h2>
+				<ul class="news_blobs">
+				<li class="news_bubble"><article>
+					<time datetime="2022-12-20">Dec. 20th, 2022</time>
+					<h3><strong>v 1.0 Full Release</strong></h3>
+					<p>We're finally open! Please feel free to use all our services and if something goes wrong - contact our support.</p>
+					<ul class="sub_lists">
+						<li class="sub_list"><p>-Pathfinder now officially supported with its own custom theme</p></li>
+						<li class="sub_list"><p>-Various UI improvements and tweaks</p></li>
+						<li class="sub_list"><p>-Numerous bug fixes</p></li>
+					</ul>
+					<a href="">Read more</a>
+				</article></li>
+				
+				<li class="news_bubble"><article>
+						<time datetime="2022-12-10">Dec. 10th, 2022</time>
+					<h3><strong>Now hiring</strong></h3>
+					<p>Would you like to help us make Alistra even better? If so - Great! Please contact us <a href="mailto: poopa_loopa@rambler.ru">here</a>!</p>
+					<a href="">Read more</a>
+				</article></li>
+				<li class="news_bubble"><article>
+					<time datetime="2022-11-21">Nov. 21st, 2022</time>
+					<h3><strong>v0.9.5 Final Beta update</strong></h3>
+					<p>At last, after years of development, this long and arduous journey to release has brought us to the finish line. In this update we fixed a whole bunch of smaller annoying bugs and made our UI a bit better</p>
+					<ul class="sub_lists">
+						<li class="sub_list"><p>-Added a feedback and question bubble on the bottom right side of the page</p></li>
+						<li class="sub_list"><p>-The UI is now more optimized for mobile users</p></li>
+						<li class="sub_list"><p>-Numerous bug fixes</p></li>
+					</ul>
+					<a href="">Read more</a>
+				</article></li>
+			</ul>
+			</article>
+
+			<footer>
+				<a href="">Read all news</a>
+			</footer>
+
+		</section>
+		<section class="rpg_selection" role="link" area-label="Selection of an RPG system you would like to play">
+			<a href=""><image class="rpg_images" src="images/dnd.png" alt="Dungeons And Dragons rooms"></a>
+			<a href=""><image class="rpg_images" src="images/pathfinder.png" alt="Pathfinder rooms"></a>
+			<a href=""><image class="rpg_images" src="images/cyberpunk.png" alt="Cyberpunk rooms"></a>
+			<a href=""><image class="rpg_images" src="images/shadowrun.png" alt="Shadowrun rooms"></a>
+		</section>
+		<aside class="game_previews" role="link" area-label="Selection of ongoing games you can join or watch">
+			<header><h2>Available rooms:</h2></header>
+			<a href=""><image class="preview_images" src="images/cyberpunk_preview.png" alt="Cyberpunk stream preview"></a>
+			<a href=""><image class="preview_images" src="images/pathfinder_preview.png" alt="Pathfinder stream preview"></a>
+			<a href=""><image class="preview_images" src="images/dnd_preview.png" alt = "Dungeons and Dragons stream preview"></a>
+		</aside>
+		
+	</div>
+	
+	</body>
+	
+	<footer>
+		<nav class="footer_navbar">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">FAQ</a></li>
+				<li><a href="">Feedback</a></li>
+				<address><li>Contact us: &#9742; <a href="mailto:poopa_loopa@rambler.ru">poopa_loopa@rambler.ru</a></li></address>
+				<address><li>&#9743; <a href="tel:+7800-555-3535">+78005553535</li></address>
+			</ul>
+		</nav>
+	</footer>
+	
+</html>

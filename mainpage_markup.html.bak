@@ -1,0 +1,97 @@
+<html prefix="og: //ogp.me/ns#">
+	<head>
+		<meta charset="UTF-8">
+		<title >Alistra</title>
+		<meta property="og:title" content="Alistra">
+		<meta property="og:type" content="video.other">
+		<meta property="og:url" content="//www.alistravchat.com/">
+		<meta property="og:image" content="images/igor.jpg">
+		<meta property="og:description" content="Nothing to look at here">
+		<meta name="keywords" content="Alistra">
+		<meta name="author" content="Viktor Dulov">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles/main_header_and_navbar_style.css">
+		<link rel="stylesheet" type="text/css" href="styles/main_footer_style.css">
+		<link rel="stylesheet" type="text/css" href="styles/feedback_popup_style.css">
+	</head>
+
+	<header>
+			<input type="checkbox" id="check_feedback">
+			<label for="check_feedback" class="right_bottom_popup_checkbtn">
+				<image class="right_bottom_popup_checkbtn" src="images/feedback.png"/>
+			</label>
+			<form class="feedback_popup">
+				<div class="feedback_popup_headbar">
+					<label for="check_feedback" type="button" id="close_feedback">
+						<image class=feedback_cross src="images/cross.svg"></image>
+					</label>
+					<b style="text-align:center;">Share your thoughts</b>
+				</div>
+					<input type="radio" name="feedback_type" id="question_checkbox" value="off">
+					<input type="radio" name="feedback_type" id="feedback_checkbox" value="on">
+				<div class="message_type_buttons">
+					<label for="question_checkbox" id="question_button">Question</label>
+					<label for="feedback_checkbox" id="feedback_button">Feedback</label>
+				</div>
+				<input type="text" placeholder="your_email@gmail.com" class="email"/>
+				<textarea placeholder="Message..." class="feedback_content"></textarea>
+				<div class="feedback_rate">
+					<input type="radio" id="star5" name="feedback_rate" value="5" />
+					<label for="star5">5</label>
+					<input type="radio" id="star4" name="feedback_rate" value="4" />
+					<label for="star4">4</label>
+					<input type="radio" id="star3" name="feedback_rate" value="3" />
+					<label for="star3">3</label>
+					<input type="radio" id="star2" name="feedback_rate" value="2" />
+					<label for="star2">2</label>
+					<input type="radio" id="star1" name="feedback_rate" value="1" />
+					<label for="star1">1</label>
+				</div>
+				<input type="submit" id="send_feedback" value="Send">
+			</form>
+			
+			<nav class="header_navbar">
+				<input type="checkbox" id="check_navbar"  class="header_navbar">
+				<label for="check_navbar" class="checkbtn"><a aria-hidden="true">&#9776;</a></label>
+				<label class="logo">AlistraVChat</label>
+				<ul  class="header_navbar">
+					<li  class="header_navbar"><a href=""  class="header_navbar">Home</a></li>
+					<li  class="header_navbar"><a href=""  class="header_navbar">FAQ</a></li>
+					<li  class="header_navbar"><a href=""  class="header_navbar">Open rooms</a></li>
+					<li  class="header_navbar"><a href=""  class="header_navbar">Create a room</a></li>
+					<li  class="header_navbar"><a href=""  class="header_navbar">Feedback</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<body>
+		<section>
+
+			<header><a>subheader (article name eg)
+			</a></header>
+
+			<article>article (main thingie)
+			</article>
+
+			<footer>subfooter (may also be interesting and some gay shit)
+			</footer>
+
+		</section>
+
+		<aside>asideinfo (ads and stuff)</aside>
+		
+		
+	</body>
+
+	<footer>
+		<nav class="footer_navbar">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">FAQ</a></li>
+				<li><a href="">Feedback</a></li>
+				<li>Contact us: &#9742; poopa_loopa@rambler.ru</li>
+				<li>&#9743; +78005553535</li>
+			</ul>
+		</nav>
+	</footer>
+</html>

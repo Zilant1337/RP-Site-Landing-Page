@@ -1,0 +1,137 @@
+.feedback_popup{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 6fr 1fr;
+	bottom: -100%;
+	right: -100%;
+	width: 50vh;
+	height: 60vh;
+	position: fixed;
+	border-width: 20px;
+	background-color: #fbe6a2;
+}
+
+.message_type_buttons{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #f7d154;
+}
+
+.feedback_popup_headbar{
+	display:grid;
+	grid-template-columns: 1fr 6fr 1fr;
+}
+
+.feedback_content{
+	resize: none;
+}
+
+.right_bottom_popup_checkbtn{	
+	display: block;
+	cursor: pointer;
+	position: fixed;
+	bottom: 5vh;
+	right: 1vw;
+	width: 12vh;
+	height: 12vh;
+}
+
+.feedback_cross{
+	display: block;
+	height: 6vh;
+	width: 6vh;
+}
+
+.feedback_rate:not(:checked) > input {
+    position:fixed;
+    top:-100%;
+}
+.feedback_rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size: 200%;
+    color:#ccc;
+}
+.feedback_rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.feedback_rate > input:checked ~ label {
+    color:blue;    
+}
+.feedback_rate:not(:checked) > label:hover,
+.feedback_rate:not(:checked) > label:hover ~ label {
+    color: #00008b;  
+}
+.feedback_rate > input:checked + label:hover,
+.feedback_rate > input:checked + label:hover ~ label,
+.feedback_rate > input:checked ~ label:hover,
+.feedback_rate > input:checked ~ label:hover ~ label,
+.feedback_rate > label:hover ~ input:checked ~ label {
+    color: #00008b;  
+}
+
+
+#close_feedback{
+	border-width: 0;
+	background-color: white;
+}
+#close_feedback:hover{
+	background-color: #feebe8;
+}
+#question_checkbox{  display: none; }
+#question_checkbox:checked ~ .feedback_rate{ 
+	display: none;
+}
+#question_button{
+	background-color: #f7d154; text-align:center;
+    cursor:pointer;
+}
+#question_button:hover{
+	background-color: #c7a317;
+}
+#feedback_checkbox{ display: none; }
+#feedback_button{
+	background-color: #f7d154;text-align:center;
+    cursor:pointer;
+}
+#feedback_button:hover{
+	background-color: #c7a317;
+}
+#send_feedback{
+	background-color: #f7d154;
+}
+#send_feedback:hover{
+	background-color: #c7a317;
+}
+
+#check_feedback{
+	display: none;
+}
+
+#check_feedback:checked ~ .right_bottom_popup_checkbtn{
+	display: none;	
+}
+
+#check_feedback:checked ~ .feedback_popup{
+	right: 1vw;
+	bottom: 5vh;
+	transition: all .2s;
+}	
+
+
+@media (max-height: 500px){
+	.right_bottom_popup_checkbtn{
+		display: none;
+		transition: .2s;
+	}
+	.feedback_popup{
+		display: none;
+		transition: all .2s;
+	}
+	#check_feedback:checked ~ .feedback_popup{
+		display: none;
+		transition: all .2s;
+	}
+}

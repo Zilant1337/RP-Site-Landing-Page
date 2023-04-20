@@ -1,0 +1,79 @@
+section.news_section{	
+	color:black; 
+	height:100%;
+	width:100%;
+	margin-right:5%;
+	margin:auto;
+	grid-row:1;
+}
+ul.news{
+	background:#92DFF3;
+	color:black;
+}
+ul.sub_lists{
+	margin-left:1%;
+	width:50%;
+	background:white;
+}
+li.sub_list{
+	background:white;
+	color:black;
+	
+}
+li.news_bubble{
+	background:#92DFF3;
+	color:black;
+	margin-bottom:2px;	
+}
+section.rpg_selection{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	width: 150%;
+	column-span:2;
+	grid-row:2;
+	margin-top:5%;
+}
+.rpg_images{
+	object-fit: cover;
+	width: 100%;
+	max-height: 100%;
+}
+header.game_previews{
+	grid-row:1;
+	
+}
+.preview_images{
+	width: 50%;
+}
+aside.game_previews{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:1fr 10fr 10fr 10fr;
+	grid-row:1;
+	grid-column:2;
+	max-width: 100%;
+	right:20%;
+	object-fit: cover;
+	height: 100%;
+	margin-left:5%;
+}
+div.contents{
+	display:grid;
+	grid-template-columns:50vw 50vw;
+	grid-template-rows:4fr 1fr;
+	width:80vw;
+	margin:auto;
+}
+
+@media(max-width: 858px){
+	aside.game_previews{
+		display:none;
+	}
+	div.contents{
+		grid-template-columns:1fr;
+		
+	}
+	section.rpg_selection{
+		width:100%;
+	}
+}
